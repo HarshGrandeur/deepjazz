@@ -51,7 +51,7 @@ def prune_grammar(curr_grammar):
 
     return pruned_grammar
 
-''' Remove repeated notes, and notes that are too close together. '''
+''' Remove repeated notes, and notes that are too close together.'''
 def prune_notes(curr_notes):
     for n1, n2 in __grouper(curr_notes, n=2):
         if n2 == None: # corner case: odd-length list
